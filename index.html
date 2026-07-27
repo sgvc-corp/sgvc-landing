@@ -32,6 +32,14 @@
 <body>
 <canvas id="ambient-particles"></canvas>
 
+<!-- Fondo ambiental: círculos geométricos superpuestos, tomados de la portada del portafolio -->
+<div class="bg-orbs" aria-hidden="true">
+  <span class="o1"></span>
+  <span class="o2"></span>
+  <span class="o3"></span>
+  <span class="o4"></span>
+</div>
+
 <header class="site-header">
   <div class="wrap">
     <a href="#" class="brand">
@@ -40,6 +48,7 @@
     <nav class="main-nav">
       <a href="#nosotros">Quiénes somos</a>
       <a href="#servicios">Servicios</a>
+      <a href="#metodologia">Metodología</a>
       <a href="#casos">Casos de éxito</a>
       <a href="#contacto">Contacto</a>
       <a href="https://wa.me/51997090722?text=Hola%20SGVC%2C%20quiero%20conversar%20sobre%20un%20proyecto" target="_blank" rel="noopener" class="btn btn-gold">Hablemos por WhatsApp</a>
@@ -57,7 +66,7 @@
       <p class="hero-sub">Automatizamos procesos, construimos sistemas a medida y creamos marketing y contenido que sí vende. Un solo equipo para que tu negocio trabaje mejor y venda más.</p>
       <div class="hero-actions">
         <a href="https://wa.me/51997090722?text=Hola%20SGVC%2C%20quiero%20conversar%20sobre%20un%20proyecto" target="_blank" rel="noopener" class="btn btn-gold">Hablemos por WhatsApp</a>
-        <a href="#casos" class="btn btn-ghost btn-on-dark">Ver casos de éxito</a>
+        <a href="#casos" class="btn btn-ghost">Ver casos de éxito</a>
       </div>
       <div class="hero-pillars">
         <span>Automatización</span>
@@ -75,11 +84,13 @@
       <span class="hero-stage-caption">el isotipo SGVC</span>
     </div>
   </div>
+  <span class="hero-scrollcue">Scroll</span>
 </section>
 
 <!-- ============ QUIENES SOMOS ============ -->
 <section id="nosotros">
   <div class="wrap">
+    <span class="section-badge">02</span>
     <div class="about-grid">
       <div class="about-copy reveal">
         <span class="eyebrow">Quiénes somos</span>
@@ -87,6 +98,11 @@
         <p style="margin-top:22px;">SGVC es una agencia peruana de tecnología y marketing.</p>
         <p>Ayudamos a negocios a vender más y a trabajar mejor, combinando automatización de procesos, sistemas a medida y estrategias de marketing digital en una sola propuesta.</p>
         <p>Trabajamos con un enfoque práctico: entender el problema real del negocio y entregar una solución que se note en resultados, no solo en apariencia.</p>
+        <div class="about-stats">
+          <div><strong>100%</strong><span>Comprometidos con nuestros clientes</span></div>
+          <div><strong>4</strong><span>Pilares de servicio integrados</span></div>
+          <div><strong>8</strong><span>Pasos en cada proyecto</span></div>
+        </div>
       </div>
 
       <div class="pillars">
@@ -116,8 +132,9 @@
 </section>
 
 <!-- ============ SERVICIOS ============ -->
-<section id="servicios" class="section-dark">
+<section id="servicios">
   <div class="wrap">
+    <span class="section-badge">03</span>
     <div class="section-head reveal">
       <span class="eyebrow">Servicios</span>
       <h2>Lo que podemos construir para tu negocio</h2>
@@ -148,9 +165,109 @@
   </div>
 </section>
 
+<!-- ============ METODOLOGIA ============ -->
+<section id="metodologia">
+  <div class="wrap">
+    <span class="section-badge">04</span>
+    <div class="section-head reveal">
+      <span class="eyebrow">Nuestra metodología</span>
+      <h2>Ocho pasos, un mismo criterio: resultados</h2>
+      <p>Así avanzamos de una idea a una solución en funcionamiento, sin perder de vista el objetivo del negocio en ningún paso.</p>
+    </div>
+
+    <div class="method-grid reveal">
+      <div class="method-step">
+        <span class="method-num">01</span>
+        <h4>Descubrir</h4>
+        <p>Entendemos tu negocio, objetivos y audiencia.</p>
+      </div>
+      <div class="method-step">
+        <span class="method-num">02</span>
+        <h4>Investigar</h4>
+        <p>Analizamos el mercado y la competencia.</p>
+      </div>
+      <div class="method-step">
+        <span class="method-num">03</span>
+        <h4>Estrategia</h4>
+        <p>Definimos el plan y las prioridades.</p>
+      </div>
+      <div class="method-step">
+        <span class="method-num">04</span>
+        <h4>Diseñar</h4>
+        <p>Diseñamos la solución enfocada en el usuario.</p>
+      </div>
+      <div class="method-step">
+        <span class="method-num">05</span>
+        <h4>Desarrollar</h4>
+        <p>Construimos, integramos y automatizamos.</p>
+      </div>
+      <div class="method-step">
+        <span class="method-num">06</span>
+        <h4>Optimizar</h4>
+        <p>Probamos, medimos y optimizamos.</p>
+      </div>
+      <div class="method-step">
+        <span class="method-num">07</span>
+        <h4>Entregar</h4>
+        <p>Lanzamos la solución y capacitamos.</p>
+      </div>
+      <div class="method-step">
+        <span class="method-num">08</span>
+        <h4>Acompañar</h4>
+        <p>Soporte continuo para seguir creciendo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POR QUE SGVC ============ -->
+<section id="porque">
+  <div class="wrap">
+    <span class="section-badge">05</span>
+    <div class="section-head centered reveal">
+      <span class="eyebrow">¿Por qué SGVC?</span>
+      <h2>Seis razones por las que los clientes se quedan</h2>
+    </div>
+
+    <div class="reasons-grid reveal">
+      <div class="reason-card">
+        <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l6.5-6.5"/><path d="M13 3l8 8-3 3-8-8 3-3z"/><path d="M9.5 6.5l8 8"/></svg></span>
+        <h4>Diseñamos pensando en ventas</h4>
+        <p>Cada pieza —web, catálogo o video— se construye para mover al cliente a la acción, no solo para verse bien.</p>
+      </div>
+      <div class="reason-card">
+        <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6" fill="currentColor" stroke="none"/></svg></span>
+        <h4>Enfoque en resultados específicos</h4>
+        <p>Definimos objetivos medibles desde el inicio del proyecto, no promesas genéricas.</p>
+      </div>
+      <div class="reason-card">
+        <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M18 6l-2 2M6 18l2-2M18 18l-2-2"/></svg></span>
+        <h4>Automatizamos procesos reales</h4>
+        <p>No vendemos herramientas de moda: automatizamos lo que de verdad le quita tiempo a tu equipo.</p>
+      </div>
+      <div class="reason-card">
+        <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v10H8l-4 4V6z"/></svg></span>
+        <h4>Comunicación constante</h4>
+        <p>Sabes en qué etapa está tu proyecto en todo momento, sin tener que preguntar.</p>
+      </div>
+      <div class="reason-card">
+        <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0116 0"/><rect x="2.5" y="12" width="4" height="6" rx="1.5"/><rect x="17.5" y="12" width="4" height="6" rx="1.5"/></svg></span>
+        <h4>Soporte post venta</h4>
+        <p>El proyecto no termina en la entrega: acompañamos la puesta en marcha y lo que venga después.</p>
+      </div>
+      <div class="reason-card">
+        <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h4>Compromiso y calidad</h4>
+        <p>Revisamos cada entregable con el mismo cuidado, sin importar el tamaño del proyecto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CASOS DE EXITO ============ -->
 <section id="casos">
   <div class="wrap">
+    <span class="section-badge">06</span>
     <div class="section-head reveal">
       <span class="eyebrow">Casos de éxito</span>
       <h2>Proyectos reales, clientes reales</h2>
@@ -161,42 +278,115 @@
       <article class="case-card reveal">
         <div class="case-media">
           <span class="case-tag">Video publicitario</span>
-          <img src="assets/img/case-petconnect.jpg" alt="Fotograma del video publicitario de Pet Connect" loading="lazy" />
+          <div class="device-stage">
+            <div class="device-single">
+              <div class="device-video behind"><img src="assets/img/case-petconnect.jpg" alt="" loading="lazy" /></div>
+              <div class="device-video front">
+                <img src="assets/img/case-petconnect.jpg" alt="Fotograma del video publicitario de Pet Connect" loading="lazy" />
+                <span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor" style="color:#F4F1E9"><path d="M8 5v14l11-7z"/></svg></span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="case-body">
+          <span class="case-kicker">Proyecto 01</span>
           <span class="case-client">Pet Connect · Cliente: Aaron Cuadros</span>
-          <h3>Una app sin descargas, resuelta con una historia</h3>
-          <div class="case-block">
-            <span class="lbl">El reto</span>
-            <p>Pet Connect conecta dueños de mascotas con veterinaria, paseo, grooming y guardería, pero era una app desconocida, sin tráfico de descargas.</p>
+          <h3>Pet Connect</h3>
+          <p class="case-dek">Video publicitario para incentivar descargas del aplicativo.</p>
+          <div class="case-service-row">
+            <span class="lbl">Servicio</span>
+            <span class="case-service-tag">Video publicitario</span>
           </div>
           <div class="case-block">
-            <span class="lbl">La solución</span>
-            <p>Un video publicitario que plantea el problema de coordinar servicios para tu mascota y presenta Pet Connect como la solución, pensado para incentivar la descarga.</p>
+            <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 8v5"/><circle cx="12" cy="16.3" r=".5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg></span>
+            <div>
+              <span class="lbl">El reto</span>
+              <p>Pet Connect es un prototipo de app que conecta dueños de mascotas con servicios como veterinaria, paseo, grooming y guardería, pero era una aplicación desconocida, sin tráfico de descargas.</p>
+            </div>
           </div>
-          <div class="case-highlight">Objetivo: convertir a una app desconocida en una con tráfico real de descargas.</div>
+          <div class="case-block">
+            <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.4.3.5.7.5 1.1v.5h6v-.5c0-.4.1-.8.5-1.1A6 6 0 0012 3z"/></svg></span>
+            <div>
+              <span class="lbl">La solución</span>
+              <p>Un video publicitario que plantea el problema de coordinar servicios para tu mascota y presenta Pet Connect como la solución, pensado para incentivar la descarga del aplicativo.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="case-results-head">
+              <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+              <span>Resultados</span>
+            </div>
+            <ul>
+              <li>Mayor reconocimiento del aplicativo.</li>
+              <li>Mensaje claro y emocional.</li>
+              <li>Material listo para campañas digitales.</li>
+            </ul>
+          </div>
         </div>
       </article>
 
       <article class="case-card reveal">
         <div class="case-media">
-          <span class="case-tag">Catálogo de producto</span>
-          <img src="assets/img/case-hg.jpg" alt="Catálogo digital de Muebles H&G" loading="lazy" />
+          <div class="device-stage">
+            <div class="compare-stack">
+              <div class="compare-row">
+                <div class="compare-col">
+                  <span class="compare-label antes">Antes</span>
+                  <div class="compare-box"><img src="assets/img/hg-antes-logo.png" alt="Logo anterior: Melamina Express" loading="lazy" /></div>
+                </div>
+                <span class="compare-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <div class="compare-col">
+                  <span class="compare-label despues">Después</span>
+                  <div class="compare-box"><img src="assets/img/hg-despues-logo.png" alt="Logo nuevo: Muebles H&G" loading="lazy" /></div>
+                </div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-col">
+                  <div class="compare-box dark"><img src="assets/img/hg-antes-1.png" alt="Foto original del mueble, baja calidad" loading="lazy" /></div>
+                </div>
+                <span class="compare-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                <div class="compare-col">
+                  <div class="compare-box dark"><img src="assets/img/hg-despues-1.png" alt="Foto editada en ambiente real" loading="lazy" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="case-body">
+          <span class="case-kicker">Proyecto 02</span>
           <span class="case-client">Muebles H&amp;G · Cliente: José Ramírez · Muebles en melamine</span>
-          <h3>Fotos que sí ayudan a decidir la compra</h3>
-          <div class="case-block">
-            <span class="lbl">El reto</span>
-            <p>Las fotos de sus productos eran de baja calidad y no ayudaban al cliente a imaginar el mueble ya instalado en su espacio, lo que alargaba la decisión de compra.</p>
+          <h3>Muebles H&amp;G</h3>
+          <p class="case-dek">Catálogo de 15 productos de muebles de melamine y rediseño de logotipo.</p>
+          <div class="case-service-row">
+            <span class="lbl">Servicio</span>
+            <span class="case-service-tag">Catálogo de productos</span>
+            <span class="case-service-tag">Diseño de logo</span>
           </div>
           <div class="case-block">
-            <span class="lbl">La solución</span>
-            <p>Un catálogo digital de 15 productos: las fotos enviadas por el cliente se editaron y mejoraron para verse profesionales y agilizar la decisión de compra.</p>
+            <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 8v5"/><circle cx="12" cy="16.3" r=".5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg></span>
+            <div>
+              <span class="lbl">El reto</span>
+              <p>Las fotos que tenía el cliente eran de baja calidad y no permitían ver cómo lucirían los muebles instalados, alargando la decisión de compra, y deseaba una nueva imagen junto al catálogo.</p>
+            </div>
           </div>
-          <div class="case-check">
-            <img src="assets/img/icon-check.png" alt="" />
-            <span>15 productos fotografiados y editados para catálogo digital</span>
+          <div class="case-block">
+            <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.4.3.5.7.5 1.1v.5h6v-.5c0-.4.1-.8.5-1.1A6 6 0 0012 3z"/></svg></span>
+            <div>
+              <span class="lbl">Nuestra solución</span>
+              <p>Mejoramos y editamos las imágenes y creamos un catálogo de muebles en ambientes reales para que el cliente tenga el resultado final.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="case-results-head">
+              <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+              <span>Resultados</span>
+            </div>
+            <ul>
+              <li>Catálogo profesional y atractivo.</li>
+              <li>Mayor confianza y decisión de compra.</li>
+              <li>Reducción del tiempo de decisión.</li>
+              <li>Nueva identidad visual.</li>
+            </ul>
           </div>
         </div>
       </article>
@@ -204,26 +394,96 @@
       <article class="case-card reveal">
         <div class="case-media">
           <span class="case-tag">Landing page</span>
-          <div class="case-media-collage">
-            <img class="full" src="assets/img/case-cazapia-front.jpg" alt="Landing page de Cazapia" loading="lazy" />
-            <img src="assets/img/case-cazapia-left.jpg" alt="Sección de la landing de Cazapia" loading="lazy" />
-            <img src="assets/img/case-cazapia-right.jpg" alt="Sección de la landing de Cazapia" loading="lazy" />
+          <div class="device-stage">
+            <div class="device-fan lg">
+              <div class="device-phone p1"><img src="assets/img/case-cazapia-left.jpg" alt="Sección de la landing de Cazapia" loading="lazy" /></div>
+              <div class="device-phone p2"><img src="assets/img/case-cazapia-front.jpg" alt="Landing page de Cazapia, vista desde celular" loading="lazy" /></div>
+              <div class="device-phone p3"><img src="assets/img/case-cazapia-right.jpg" alt="Sección de la landing de Cazapia" loading="lazy" /></div>
+            </div>
+            <span class="device-caption">Vista desde celular</span>
           </div>
         </div>
         <div class="case-body">
+          <span class="case-kicker">Proyecto 03</span>
           <span class="case-client">Cazapia · Cliente: Adrian Cazapia · cazapia.com</span>
-          <h3>Una casa propia para generar confianza</h3>
-          <div class="case-block">
-            <span class="lbl">El reto</span>
-            <p>El negocio no tenía una plataforma propia donde mostrar sus objetivos y generar confianza en sus potenciales alumnos y clientes.</p>
+          <h3>Cazapia</h3>
+          <p class="case-dek">Desarrollo de landing page.</p>
+          <div class="case-service-row">
+            <span class="lbl">Cliente</span>
+            <span class="case-service-tag">Adrian Cazapia</span>
+            <span class="lbl" style="margin-left:8px;">Servicio</span>
+            <span class="case-service-tag">Landing Page</span>
           </div>
           <div class="case-block">
-            <span class="lbl">La solución</span>
-            <p>Landing page a medida con secciones de Inicio, Testimonios y Beneficios, más accesos directos a sus redes sociales.</p>
+            <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 8v5"/><circle cx="12" cy="16.3" r=".5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg></span>
+            <div>
+              <span class="lbl">El reto</span>
+              <p>No contaba con una plataforma propia donde mostrar sus objetivos y generar confianza en potenciales alumnos.</p>
+            </div>
           </div>
-          <div class="case-quote">"Mayor alcance y flujo de alumnos, superando los números esperados en tiempo récord."</div>
+          <div class="case-block">
+            <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.4.3.5.7.5 1.1v.5h6v-.5c0-.4.1-.8.5-1.1A6 6 0 0012 3z"/></svg></span>
+            <div>
+              <span class="lbl">Nuestra solución</span>
+              <p>Diseñamos una landing page moderna con secciones clave: Inicio, Beneficios, Testimonios y accesos directos a sus redes sociales.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="case-results-head">
+              <span class="case-block-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+              <span>Resultados</span>
+            </div>
+            <ul>
+              <li>Mayor alcance y flujo de alumnos.</li>
+              <li>Se superaron los números esperados en tiempo récord.</li>
+            </ul>
+          </div>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESO COMERCIAL ============ -->
+<section id="proceso">
+  <div class="wrap">
+    <span class="section-badge">07</span>
+    <div class="section-head reveal">
+      <span class="eyebrow">Proceso comercial</span>
+      <h2>Así convertimos una idea en una solución que genera resultados</h2>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-step">
+        <span class="timeline-num">01</span>
+        <h4>Reunión</h4>
+        <p>Conocemos tu empresa, entendemos tus objetivos y escuchamos tus necesidades.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">02</span>
+        <h4>Diagnóstico</h4>
+        <p>Identificamos las mejores oportunidades para tu negocio.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">03</span>
+        <h4>Propuesta</h4>
+        <p>Presentamos una solución con alcance, tiempos e inversión.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">04</span>
+        <h4>Desarrollo</h4>
+        <p>Diseñamos y desarrollamos manteniendo comunicación constante.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">05</span>
+        <h4>Implementación</h4>
+        <p>Entregamos el proyecto y capacitamos a tu equipo.</p>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">06</span>
+        <h4>Acompañamiento</h4>
+        <p>Damos soporte y seguimiento para que siga generando resultados.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -231,6 +491,7 @@
 <!-- ============ CONTACTO ============ -->
 <section id="contacto">
   <div class="wrap">
+    <span class="section-badge">08</span>
     <div class="contact reveal">
       <div class="contact-copy">
         <span class="eyebrow hero-eyebrow">¿Hablamos?</span>

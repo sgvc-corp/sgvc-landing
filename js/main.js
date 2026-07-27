@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Tilt cards (pillars + cases) ---------- */
   if (!reduceMotion && window.matchMedia('(hover: hover)').matches) {
-    document.querySelectorAll('.pillar-card, .case-card').forEach(card => {
+    document.querySelectorAll('.pillar-card, .case-card, .reason-card').forEach(card => {
       const strength = card.classList.contains('case-card') ? 4 : 8;
       card.addEventListener('mousemove', (e) => {
         const r = card.getBoundingClientRect();
