@@ -205,3 +205,23 @@ function initAmbientParticles(reduceMotion) {
   requestAnimationFrame(step);
 }
 
+
+// ============================================================
+// Reel SGVC — clic para reproducir (sin autoplay, sin peso extra)
+// ============================================================
+(function () {
+  const stage = document.getElementById('reelStage');
+  if (!stage) return;
+  stage.addEventListener('click', function () {
+    if (stage.querySelector('video')) return;
+    const poster = document.getElementById('reelPoster');
+    const video = document.createElement('video');
+    video.src = 'assets/video/sgvc-reel.mp4';
+    video.controls = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    video.setAttribute('preload', 'auto');
+    if (poster) poster.replaceWith(video);
+    stage.classList.add('is-playing');
+  });
+})();

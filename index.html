@@ -87,6 +87,21 @@
   <span class="hero-scrollcue">Scroll</span>
 </section>
 
+<!-- ============ REEL SGVC ============ -->
+<div class="reel-band">
+  <div class="wrap reel-grid">
+    <div class="reel-copy reveal">
+      <span class="eyebrow">Detrás de SGVC</span>
+      <h2>Así trabajamos con cada cliente</h2>
+      <p>Un vistazo rápido a cómo se ve un proyecto por dentro: comunicación directa, ajustes en tiempo real y atención a cada detalle hasta que el cliente queda conforme.</p>
+    </div>
+    <div class="reel-stage reveal" id="reelStage">
+      <img src="assets/img/sgvc-reel-poster.jpg" alt="Reel SGVC" id="reelPoster" />
+      <span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor" style="color:#F4F1E9"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</div>
+
 <!-- ============ QUIENES SOMOS ============ -->
 <section id="nosotros">
   <div class="wrap">
@@ -400,7 +415,17 @@
               <div class="device-phone p2"><img src="assets/img/case-cazapia-front.jpg" alt="Landing page de Cazapia, vista desde celular" loading="lazy" /></div>
               <div class="device-phone p3"><img src="assets/img/case-cazapia-right.jpg" alt="Sección de la landing de Cazapia" loading="lazy" /></div>
             </div>
-            <span class="device-caption">Vista desde celular</span>
+            <span class="device-caption" style="position:static;transform:none;margin-top:10px;">Vista desde celular</span>
+
+            <div class="device-reel">
+              <video
+                controls preload="none"
+                poster="assets/img/cazapia-reel-poster.jpg"
+                playsinline>
+                <source src="assets/img/cazapia-reel.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <span class="device-caption" style="position:static;transform:none;margin-top:10px;">Reel sobre SGVC, hecho por Cazapia</span>
           </div>
         </div>
         <div class="case-body">
@@ -454,10 +479,11 @@
     </div>
 
     <div class="timeline reveal">
+      <span class="timeline-progress" aria-hidden="true"></span>
       <div class="timeline-step">
         <span class="timeline-num">01</span>
         <h4>Reunión</h4>
-        <p>Conocemos tu negocio, entendemos tus objetivos y escuchamos tus necesidades.</p>
+        <p>Conocemos tu empresa, entendemos tus objetivos y escuchamos tus necesidades.</p>
       </div>
       <div class="timeline-step">
         <span class="timeline-num">02</span>
@@ -526,6 +552,10 @@
   </div>
 </footer>
 
+<!-- GSAP + ScrollTrigger — 100% gratis (licencia GreenSock "No Charge" desde 2025), solo mejora la experiencia: si el CDN falla, el sitio sigue funcionando igual con las animaciones base de main.js. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/motion.js"></script>
 </body>
 </html>
